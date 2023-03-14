@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.adarshpanig.placementapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen"
+            android:theme="@style/AppTheme1">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StudentLogin"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".StudentHome"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".AddingSelected"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".AddingPapers"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".CommonActivity"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".AddingCompany"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".TPOHome"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".TPOLogin"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".AddingNewStudent"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".AddingNewTPO"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".AdminHome"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".AdminLogin"
+            android:theme="@style/AppTheme2"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

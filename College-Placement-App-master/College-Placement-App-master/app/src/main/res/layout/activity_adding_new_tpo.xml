@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddingNewTPO">
+
+    <TextView
+        android:id="@+id/header1"
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:text="New TPO Details"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40sp"
+        android:textColor="#000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:src="@drawable/tpologocvrce"
+        android:id="@+id/imgstu2"
+        app:layout_constraintTop_toBottomOf="@id/header1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/tponame"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="  TPO Name"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:inputType="textPersonName"
+        android:background="@drawable/newedittext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgstu2"/>
+
+    <EditText
+        android:id="@+id/tpopassword"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="40sp"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:background="@drawable/newedittext"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tponame" />
+
+
+
+    <EditText
+        android:id="@+id/tpoid"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginLeft="40sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="40sp"
+        android:hint="  TPO ID"
+        android:inputType="textPersonName"
+        android:textSize="24sp"
+        android:background="@drawable/newedittext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tpopassword" />
+    <Button
+        android:id="@+id/tpoadd"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:background="@drawable/myowngradient2"
+        android:onClick="TpoAdded"
+        android:text="ADD"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tpoid" />
+</androidx.constraintlayout.widget.ConstraintLayout>

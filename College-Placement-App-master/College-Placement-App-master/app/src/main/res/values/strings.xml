@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Placement App</string>
+    <string name="add">add</string>
+    <string name="company_details">Company Details</string>
+    <string name="choose_an_image">Choose an Image</string>
+    <string name="choose">Choose</string>
+    <string name="enter_title"> Enter Title</string>
+    <string name="enter_description"> Enter Description</string>
+    <string name="add1">Add</string>
+</resources>

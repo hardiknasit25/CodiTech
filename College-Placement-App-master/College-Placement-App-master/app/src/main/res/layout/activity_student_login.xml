@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".StudentLogin">
+
+    <RelativeLayout
+        android:id="@+id/rl01"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:background="#0288D1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/clogo0"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/graduateiconwhite" />
+
+            <TextView
+                android:id="@+id/cvrceName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/clogo0"
+                android:layout_centerVertical="true"
+                android:text="CVRCE"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="36sp" />
+
+            <TextView
+                android:id="@+id/placementsName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/cvrceName1"
+                android:text=" Placements"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#ffffff"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llLoginPanel"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl01"
+        android:layout_marginTop="60sp"
+        android:layout_height="350sp"
+        android:background="@drawable/shape_login_panel"
+        tools:ignore="MissingConstraints"
+        android:paddingTop="70sp"
+        android:paddingLeft="50sp"
+        android:paddingRight="50sp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/studentidL"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:hint="Student ID"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/studentpasswordL"
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:inputType="textPassword"
+            android:layout_height="60sp"
+            android:hint="Password" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15sp"
+            android:textColor="#000000"
+            android:gravity="right"
+            android:text="Forgot Password ?" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/studentlogin"
+        android:onClick="StudentLoggedIn"
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:background="@drawable/myowngradient"
+        android:text="Login"
+        android:textSize="27sp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="@id/llLoginPanel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
