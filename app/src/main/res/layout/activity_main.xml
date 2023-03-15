@@ -71,7 +71,7 @@
 
 
             <EditText
-                android:id="@+id/usernameEditText"
+                android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_5sdp"
@@ -85,7 +85,7 @@
                 tools:ignore="HardcodedText,UnusedAttribute" />
 
             <EditText
-                android:id="@+id/passwordEditText"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_5sdp"

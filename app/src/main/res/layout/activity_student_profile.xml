@@ -63,7 +63,8 @@
                     android:textColor="@color/black"
                     android:layout_marginStart="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_10sdp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
 
                 <EditText
                     android:id="@+id/name"
@@ -142,7 +143,7 @@
                     tools:ignore="HardcodedText" />
 
                 <EditText
-                    android:id="@+id/Collage"
+                    android:id="@+id/collage"
                     android:layout_width="@dimen/_280sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"

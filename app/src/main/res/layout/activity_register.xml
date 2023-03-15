@@ -72,7 +72,7 @@
 
 
             <EditText
-                android:id="@+id/usernameEditText"
+                android:id="@+id/email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_5sdp"
@@ -83,10 +83,10 @@
                 android:padding="@dimen/_8sdp"
                 android:textColor="#5E5C5C"
                 android:textColorHint="#5E5C5C"
-                tools:ignore="HardcodedText,UnusedAttribute" />
+                tools:ignore="Autofill,HardcodedText,TextFields,UnusedAttribute" />
 
             <EditText
-                android:id="@+id/passwordEditText"
+                android:id="@+id/password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/_5sdp"
@@ -96,21 +96,6 @@
                 android:inputType="textPassword"
                 android:padding="@dimen/_8sdp"
                 android:textColor="#5E5C5C"
-                android:textColorHint="#5E5C5C"
-                tools:ignore="Autofill,HardcodedText,UnusedAttribute" />
-
-            <EditText
-                android:id="@+id/confirmpasswordEditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:background="@drawable/back"
-                android:backgroundTint="#DCDBDB"
-                android:hint="Confirm Password"
-                android:inputType="textPassword"
-                android:padding="@dimen/_8sdp"
-                android:textColor="#5E5C5C"
-                android:layout_marginTop="@dimen/_10sdp"
                 android:textColorHint="#5E5C5C"
                 tools:ignore="Autofill,HardcodedText,UnusedAttribute" />
 
@@ -145,7 +130,7 @@
                     tools:ignore="HardcodedText" />
 
                 <TextView
-                    android:id="@+id/registerTextView"
+                    android:id="@+id/loginhere"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
