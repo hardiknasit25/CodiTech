@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/loginTextView"
@@ -27,9 +28,9 @@
         android:layout_alignStart="@+id/parent"
         android:layout_alignEnd="@+id/parent"
         android:fontFamily="@font/amaranth_bold"
-        android:text="Smart Placement"
+        android:text="Register"
         android:textColor="#4A6BD0"
-        android:textSize="@dimen/_30sdp"
+        android:textSize="@dimen/_35sdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +79,7 @@
                 android:layout_marginBottom="@dimen/_15sdp"
                 android:background="@drawable/back"
                 android:backgroundTint="#DCDBDB"
-                android:hint="Username"
+                android:hint="Email Address"
                 android:padding="@dimen/_8sdp"
                 android:textColor="#5E5C5C"
                 android:textColorHint="#5E5C5C"
@@ -98,23 +99,31 @@
                 android:textColorHint="#5E5C5C"
                 tools:ignore="Autofill,HardcodedText,UnusedAttribute" />
 
-            <TextView
-                android:id="@+id/forgotTextView"
+            <EditText
+                android:id="@+id/confirmpasswordEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:text="Forgot password?"
-                android:textColor="#4A6BD0"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/back"
+                android:backgroundTint="#DCDBDB"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/_8sdp"
+                android:textColor="#5E5C5C"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColorHint="#5E5C5C"
+                tools:ignore="Autofill,HardcodedText,UnusedAttribute" />
+
+
 
             <Button
-                android:id="@+id/loginButton"
+                android:id="@+id/registerButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_25sdp"
                 android:background="@drawable/frame"
-                android:text="Log in"
+                android:text="Register"
+                android:gravity="center"
                 app:backgroundTint="#4A6BD0"
                 tools:ignore="HardcodedText" />
 
@@ -128,9 +137,9 @@
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_60sdp"
                     android:gravity="center"
-                    android:text="Don't have an account?"
+                    android:text="Go to!"
                     android:textAlignment="center"
                     android:textColor="#5E5C5C"
                     tools:ignore="HardcodedText" />
@@ -140,42 +149,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
-                    android:text="Register"
+                    android:text="Login Page"
                     android:textAlignment="center"
                     android:textColor="#4A6BD0"
                     tools:ignore="HardcodedText" />
-
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/TextView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingTop="@dimen/_15sdp"
-                android:text="---------- Or login via ----------"
-                android:textAlignment="center"
-                android:textColor="#4A6BD0"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_50sdp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:paddingStart="90dp"
-                    android:src="@drawable/google" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="@dimen/_1sdp"
-                    android:paddingStart="@dimen/_10sdp"
-                    android:src="@drawable/linkedin" />
 
             </LinearLayout>
 

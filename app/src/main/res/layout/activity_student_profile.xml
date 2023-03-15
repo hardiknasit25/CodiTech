@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student_profile">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:backgroundTint="#4A6BD0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="UnusedAttribute">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="make your profile"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/_30sdp"
+            android:fontFamily="@font/amaranth_bold"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_45sdp"
+            tools:ignore="HardcodedText" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/_25sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:backgroundTint="#EEEEEE"
+        tools:ignore="UnusedAttribute">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name:"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/back"
+                    android:backgroundTint="#DCDBDB"
+                    android:hint="Enter Your Name"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="#5E5C5C"
+                    android:textColorHint="#5E5C5C"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address:"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/back"
+                    android:backgroundTint="#DCDBDB"
+                    android:hint="email address"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="#5E5C5C"
+                    android:textColorHint="#5E5C5C"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Number:"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/number"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/back"
+                    android:backgroundTint="#DCDBDB"
+                    android:hint="mobile number"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="#5E5C5C"
+                    android:textColorHint="#5E5C5C"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:inputType="number"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Collage Name:"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/Collage"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/back"
+                    android:backgroundTint="#DCDBDB"
+                    android:hint="collage name"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="#5E5C5C"
+                    android:textColorHint="#5E5C5C"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Branch Name:"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/branch"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/back"
+                    android:backgroundTint="#DCDBDB"
+                    android:hint="branch name"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="#5E5C5C"
+                    android:textColorHint="#5E5C5C"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CGPA:"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/marks"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/back"
+                    android:backgroundTint="#DCDBDB"
+                    android:hint="Enter CGPA for current sem"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="#5E5C5C"
+                    android:textColorHint="#5E5C5C"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Graduation Year:"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/graduation"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/back"
+                    android:backgroundTint="#DCDBDB"
+                    android:hint="collage name"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="#5E5C5C"
+                    android:textColorHint="#5E5C5C"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:inputType="number"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skills:"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/skill"
+                    android:layout_width="@dimen/_280sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/back"
+                    android:backgroundTint="#DCDBDB"
+                    android:hint="collage name"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="#5E5C5C"
+                    android:textColorHint="#5E5C5C"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    tools:ignore="HardcodedText,UnusedAttribute" />
+
+                <TextView
+                    android:id="@+id/add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add skill"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="#4A6BD0"
+                    android:layout_marginStart="@dimen/_230sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginStart="@dimen/_90sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:backgroundTint="#4A6BD0"
+                    android:text="SAVE"
+                    android:textSize="20sp"
+                    app:cornerRadius="25dp"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
