@@ -63,6 +63,7 @@ public class student_profile extends AppCompatActivity {
                             Toast.makeText(student_profile.this, "Profile make Successfully", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(student_profile.this,student_main_page.class);
                             startActivity(intent);
+                            finish();
                         }else{
                             Toast.makeText(student_profile.this, "Please Fill Data Compaletaly", Toast.LENGTH_SHORT).show();
                         }
