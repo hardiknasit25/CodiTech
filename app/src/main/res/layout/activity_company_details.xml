@@ -46,7 +46,7 @@
             android:layout_height="@dimen/_35sdp"
             android:backgroundTint="#FFFFFF"
             app:cardCornerRadius="@dimen/_100sdp"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
             android:layout_marginStart="@dimen/_250sdp">
 
             <ImageView
@@ -79,6 +79,55 @@
             android:layout_marginEnd="@dimen/_5sdp">
 
         </ScrollView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_270sdp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:backgroundTint="#FFFFFF"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/companyImage"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:background="@drawable/apple"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_100sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Company name:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Apple"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        tools:ignore="HardcodedText" />
+
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
 
 
     </androidx.cardview.widget.CardView>
