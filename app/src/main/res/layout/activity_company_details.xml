@@ -81,16 +81,16 @@
         </ScrollView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="@dimen/_270sdp"
+                android:layout_width="@dimen/_290sdp"
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="@dimen/_10sdp"
                 android:backgroundTint="#FFFFFF"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:layout_marginStart="@dimen/_10sdp">
+                android:layout_marginStart="@dimen/_12sdp">
 
                 <ImageView
                     android:id="@+id/companyImage"
-                    android:layout_width="@dimen/_270sdp"
+                    android:layout_width="@dimen/_280sdp"
                     android:layout_height="@dimen/_100sdp"
                     android:background="@drawable/apple"/>
 
@@ -104,7 +104,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:text="Company name:"
-                        android:textColor="#000000"
+                        android:textColor="#4A6BD0"
                         android:textSize="@dimen/_15sdp"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:textStyle="bold"
@@ -130,26 +130,59 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Company name:"
-                        android:textColor="#000000"
+                        android:text="Location :"
+                        android:textColor="#4A6BD0"
                         android:textSize="@dimen/_15sdp"
                         android:layout_marginStart="@dimen/_10sdp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Apple"
+                        android:text="Mumbai"
                         android:textColor="#000000"
                         android:textSize="@dimen/_15sdp"
                         android:layout_marginStart="@dimen/_10sdp"
                         tools:ignore="HardcodedText" />
 
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_140sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reqirement:"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:textColor="#4A6BD0"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Web Developer"
+                        android:textSize="@dimen/_15sdp"
+                        android:textColor="#000000"
+                        android:layout_marginStart="@dimen/_10sdp"/>
 
                 </LinearLayout>
 
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_165sdp"
+                    android:textColor="#4A6BD0"
+                    android:textStyle="bold"
+                    android:text="Apply For Job"
+                    android:layout_marginStart="@dimen/_85sdp"
+                    android:textSize="@dimen/_20sdp"
+                    app:cornerRadius="@dimen/_120sdp"/>
 
 
             </androidx.cardview.widget.CardView>

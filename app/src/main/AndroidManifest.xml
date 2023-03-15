@@ -12,6 +12,9 @@
         android:theme="@style/Theme.PlacementManagementSystem"
         tools:targetApi="31">
         <activity
+            android:name=".company_profile"
+            android:exported="false" />
+        <activity
             android:name=".company_details"
             android:exported="false" />
         <activity
