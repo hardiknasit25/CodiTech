@@ -1,12 +1,12 @@
 package com.example.placementmanagementsystem;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class Select_Profile extends AppCompatActivity {
     private CardView student,company;
@@ -25,6 +25,7 @@ public class Select_Profile extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Select_Profile.this, student_profile.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -33,6 +34,7 @@ public class Select_Profile extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Select_Profile.this, company_profile.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

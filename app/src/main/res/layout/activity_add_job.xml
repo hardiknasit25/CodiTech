@@ -25,7 +25,7 @@
             android:textSize="@dimen/_30sdp"
             android:fontFamily="@font/amaranth_bold"
             android:layout_marginTop="@dimen/_40sdp"
-            android:layout_marginStart="@dimen/_45sdp"
+            android:layout_marginStart="@dimen/_60sdp"
             tools:ignore="HardcodedText" />
 
     </androidx.cardview.widget.CardView>
@@ -56,17 +56,18 @@
             android:textStyle="bold"
             android:textSize="@dimen/_15sdp"
             android:layout_marginTop="@dimen/_200sdp"
-            android:layout_marginStart="@dimen/_100sdp"
+            android:layout_marginStart="@dimen/_110sdp"
             tools:ignore="HardcodedText"
             android:backgroundTint="#4A6BD0"/>
 
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
+        <Button
             android:id="@+id/plus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#4A6BD0"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginStart="@dimen/_250sdp"
             android:layout_marginTop="@dimen/_380sdp"
-            android:layout_marginStart="@dimen/_250sdp" />
+            android:backgroundTint="#4A6BD0"
+            app:cornerRadius="@dimen/_150sdp" />
 
     </androidx.cardview.widget.CardView>
 

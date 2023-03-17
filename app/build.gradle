@@ -19,7 +19,7 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -43,4 +43,5 @@ dependencies {
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
     implementation 'com.intuit.ssp:ssp-android:1.1.0'
     implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'androidx.multidex:multidex: 2.0.1'
 }

@@ -8,22 +8,31 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class add_job extends AppCompatActivity {
 
     Button add;
-    FloatingActionButton plus;
+    Button plus;
     RecyclerView recycle;
 
     FirebaseFirestore db;
+
+    ArrayList<AddjobModel> arrJob ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +43,7 @@ public class add_job extends AppCompatActivity {
         plus = findViewById(R.id.plus);
         recycle = findViewById(R.id.recycle);
 
-        recycle.setLayoutManager(new GridLayoutManager(this,1));
+
 
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,8 +62,7 @@ public class add_job extends AppCompatActivity {
                 job = dialog.findViewById(R.id.job);
                 db = FirebaseFirestore.getInstance();
 
-//                showNotes();
-
+                getAllData();
 
                 job.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -67,8 +75,6 @@ public class add_job extends AppCompatActivity {
 
                         AddjobModel data = new AddjobModel(adate,apackag,acgpa,askill);
 
-
-
                         if((!adate.equals("")) || (!apackag.equals("")) || (!acgpa.equals("")) || (!askill.equals(""))){
 
                             db.collection("job").document().set(data).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -76,7 +82,7 @@ public class add_job extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<Void> task) {
 
                                     if (task.isSuccessful()){
-                                        Toast.makeText(add_job.this, "Enter job", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(add_job.this, "job Enter Successfuly", Toast.LENGTH_SHORT).show();
 //                                        Intent intent = new Intent(add_job.this,student_main_page.class);
 //                                        startActivity(intent);
 //                                        finish();
@@ -87,7 +93,6 @@ public class add_job extends AppCompatActivity {
                                 }
                             });
 
-//                            showNotes();
                             dialog.dismiss();
 
                         }else{
@@ -97,6 +102,7 @@ public class add_job extends AppCompatActivity {
                     }
                 });
 
+                getAllData();
                 dialog.show();
 
             }
@@ -112,12 +118,57 @@ public class add_job extends AppCompatActivity {
 
     }
 
+        public void getAllData(){
+
+        arrJob = new ArrayList<>();
+        arrJob.clear();
+        db.collection("job").addSnapshotListener(new EventListener<QuerySnapshot>() {
+            @Override
+            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+                if (error == null){
+                    List<AddjobModel> data = value.toObjects(AddjobModel.class);
+                    arrJob.addAll(data);
+                    recycle.setLayoutManager(new LinearLayoutManager(add_job.this));
+                    recycle.setAdapter(new RecyclerAddjobAdapter(add_job.this,arrJob));
+
+                    if(arrJob.size()>0){
+                        recycle.setVisibility(View.VISIBLE);
+                        add.setVisibility(View.GONE);
+                        recycle.setAdapter(new RecyclerAddjobAdapter(add_job.this, arrJob));
+
+                    }else{
+                        add.setVisibility(View.VISIBLE);
+                        recycle.setVisibility(View.GONE);
+                    }
+
+                }
+
+            }
+        });
+
+        }
+
 //    private void showNotes() {
-//            ArrayList<Note> arrNotes = (ArrayList<Note>) db.collection("job").document().getFirestore();
 //
-//            if(arrNotes.size()>0){
+//        arrJob = new ArrayList<>();
+//        arrJob.clear();
+//           db.collection("job").addSnapshotListener(new EventListener<QuerySnapshot>() {
+//            @Override
+//            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+//                if (error == null)
+//                {
+//                    List<AddjobModel> data = value.toObjects(AddjobModel.class);
+//                    arrJob.addAll(data);
+//                    recycle.setLayoutManager(new LinearLayoutManager(add_job.this));
+//                    recycle.setAdapter(new RecyclerAddjobAdapter(add_job.this,arrJob));
+//                }
+//            }
+//        });
+//
+//            if(arrJob.size()>0){
 //                recycle.setVisibility(View.VISIBLE);
 //                add.setVisibility(View.GONE);
+//                recycle.setAdapter(new RecyclerAddjobAdapter(this, arrJob));
 //
 //            }else{
 //                add.setVisibility(View.VISIBLE);

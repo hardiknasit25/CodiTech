@@ -72,10 +72,11 @@
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
-                    android:hint="Enter Your Name"
+                    android:hint="enter Your Name"
                     android:padding="@dimen/_8sdp"
                     android:textColor="#5E5C5C"
                     android:textColorHint="#5E5C5C"
+                    android:inputType="textAutoCorrect"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     tools:ignore="HardcodedText,UnusedAttribute" />
@@ -98,6 +99,7 @@
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
                     android:hint="email address"
+                    android:inputType="textAutoCorrect"
                     android:padding="@dimen/_8sdp"
                     android:textColor="#5E5C5C"
                     android:textColorHint="#5E5C5C"
@@ -122,7 +124,7 @@
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
-                    android:hint="mobile number"
+                    android:hint="enter mobile number"
                     android:padding="@dimen/_8sdp"
                     android:textColor="#5E5C5C"
                     android:textColorHint="#5E5C5C"
@@ -148,12 +150,13 @@
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
-                    android:hint="collage name"
+                    android:hint="enter collage name"
                     android:padding="@dimen/_8sdp"
                     android:textColor="#5E5C5C"
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:inputType="textAutoCorrect"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
                 <TextView
@@ -173,12 +176,13 @@
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
-                    android:hint="branch name"
+                    android:hint="enter branch name"
                     android:padding="@dimen/_8sdp"
                     android:textColor="#5E5C5C"
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:inputType="textAutoCorrect"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
                 <TextView
@@ -198,12 +202,13 @@
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
-                    android:hint="Enter CGPA for current sem"
+                    android:hint="enter CGPA for current sem"
                     android:padding="@dimen/_8sdp"
                     android:textColor="#5E5C5C"
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:inputType="text"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
                 <TextView
@@ -223,7 +228,7 @@
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
-                    android:hint="collage name"
+                    android:hint="enter graduation year"
                     android:padding="@dimen/_8sdp"
                     android:textColor="#5E5C5C"
                     android:textColorHint="#5E5C5C"
@@ -255,6 +260,7 @@
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:inputType="textAutoCorrect"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
                 <TextView

@@ -71,12 +71,13 @@
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
-                    android:hint="Enter company Name"
+                    android:hint="enter company Name"
                     android:padding="@dimen/_8sdp"
                     android:textColor="#5E5C5C"
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:inputType="textAutoCorrect"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
                 <TextView
@@ -102,6 +103,7 @@
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:inputType="textAutoCorrect"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
                 <TextView
@@ -142,7 +144,7 @@
                     tools:ignore="HardcodedText" />
 
                 <EditText
-                    android:id="@+id/Collage"
+                    android:id="@+id/city"
                     android:layout_width="@dimen/_280sdp"
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
@@ -153,94 +155,9 @@
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:inputType="textAutoCorrect"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Package:"
-                    android:textSize="@dimen/_15sdp"
-                    android:textColor="@color/black"
-                    android:layout_marginStart="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:textStyle="bold"
-                    tools:ignore="HardcodedText" />
-
-                <EditText
-                    android:id="@+id/branch"
-                    android:layout_width="@dimen/_280sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:background="@drawable/back"
-                    android:backgroundTint="#DCDBDB"
-                    android:hint="package"
-                    android:padding="@dimen/_8sdp"
-                    android:textColor="#5E5C5C"
-                    android:textColorHint="#5E5C5C"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    tools:ignore="HardcodedText,UnusedAttribute" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Required CGPA:"
-                    android:textSize="@dimen/_15sdp"
-                    android:textColor="@color/black"
-                    android:layout_marginStart="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:textStyle="bold"
-                    tools:ignore="HardcodedText" />
-
-                <EditText
-                    android:id="@+id/marks"
-                    android:layout_width="@dimen/_280sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:background="@drawable/back"
-                    android:backgroundTint="#DCDBDB"
-                    android:hint="Enter required CGPA for current sem"
-                    android:padding="@dimen/_8sdp"
-                    android:textColor="#5E5C5C"
-                    android:textColorHint="#5E5C5C"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    tools:ignore="HardcodedText,UnusedAttribute" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Require Skills:"
-                    android:textSize="@dimen/_15sdp"
-                    android:textColor="@color/black"
-                    android:layout_marginStart="@dimen/_20sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
-                    android:textStyle="bold"
-                    tools:ignore="HardcodedText" />
-
-                <EditText
-                    android:id="@+id/skill"
-                    android:layout_width="@dimen/_280sdp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:background="@drawable/back"
-                    android:backgroundTint="#DCDBDB"
-                    android:hint="enter requirement"
-                    android:padding="@dimen/_8sdp"
-                    android:textColor="#5E5C5C"
-                    android:textColorHint="#5E5C5C"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    tools:ignore="HardcodedText,UnusedAttribute" />
-
-                <TextView
-                    android:id="@+id/add"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Add"
-                    android:textSize="@dimen/_15sdp"
-                    android:textColor="#4A6BD0"
-                    android:layout_marginStart="@dimen/_250sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:textStyle="bold"
-                    tools:ignore="HardcodedText" />
 
                 <Button
                     android:id="@+id/save"

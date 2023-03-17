@@ -3,6 +3,7 @@ package com.example.placementmanagementsystem;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -56,19 +57,66 @@ public class student_profile extends AppCompatActivity {
 
                 StudentModel data = new StudentModel(sname,semail,snumber,scollage,sbranch,smarks,sgraduation,sskill);
 
-                db.collection("user").document().set(data).addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()){
-                            Toast.makeText(student_profile.this, "Profile make Successfully", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(student_profile.this,student_main_page.class);
-                            startActivity(intent);
-                            finish();
-                        }else{
-                            Toast.makeText(student_profile.this, "Please Fill Data Compaletaly", Toast.LENGTH_SHORT).show();
+                Boolean flag = true;
+
+                if (TextUtils.isEmpty(sname)){
+                    Toast.makeText(student_profile.this, "Please Enter company name", Toast.LENGTH_SHORT).show();
+//                            flag = false;
+                    return;
+                }
+
+                if (TextUtils.isEmpty(semail)){
+                    Toast.makeText(student_profile.this, "Please Enter email address", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(snumber) || snumber.length() < 10){
+                    Toast.makeText(student_profile.this, "Please Enter number", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(scollage)){
+                    Toast.makeText(student_profile.this, "Please Enter collage", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(sbranch)){
+                    Toast.makeText(student_profile.this, "Please Enter branch name", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(smarks)){
+                    Toast.makeText(student_profile.this, "Please Enter marks", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(sgraduation)){
+                    Toast.makeText(student_profile.this, "Please Enter graduation year", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(sskill)){
+                    Toast.makeText(student_profile.this, "Please Enter skills", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                else {
+                    
+                    db.collection("user").document().set(data).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+
+                            if(task.isSuccessful()) {
+                                Toast.makeText(student_profile.this, "Profile Make Successful", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(student_profile.this, student_main_page.class);
+                                startActivity(intent);
+                                finish();
+                            }else {
+                                Toast.makeText(student_profile.this, "Please fill data", Toast.LENGTH_SHORT).show();
+                            }
                         }
-                    }
-                });
+                    });
+                }
 
             }
         });
