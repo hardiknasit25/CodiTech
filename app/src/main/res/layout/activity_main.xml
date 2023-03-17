@@ -78,10 +78,11 @@
                 android:layout_marginBottom="@dimen/_15sdp"
                 android:background="@drawable/back"
                 android:backgroundTint="#DCDBDB"
-                android:hint="Username"
+                android:hint="Email Address"
                 android:padding="@dimen/_8sdp"
                 android:textColor="#5E5C5C"
                 android:textColorHint="#5E5C5C"
+                android:inputType="textAutoCorrect"
                 tools:ignore="HardcodedText,UnusedAttribute" />
 
             <EditText

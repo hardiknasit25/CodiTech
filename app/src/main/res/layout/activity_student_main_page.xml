@@ -142,7 +142,7 @@
                     <TextView
                         android:layout_width="@dimen/_150sdp"
                         android:layout_height="wrap_content"
-                        android:text="Visit Companys"
+                        android:text="Visit Companies"
                         android:textColor="#4A6BD0"
                         android:textSize="@dimen/_15sdp"
                         android:layout_marginTop="@dimen/_120sdp"

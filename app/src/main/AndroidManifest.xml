@@ -26,9 +26,6 @@
             android:name=".company_profile"
             android:exported="false" />
         <activity
-            android:name=".company_details"
-            android:exported="false" />
-        <activity
             android:name=".visit_company"
             android:exported="false" />
         <activity
