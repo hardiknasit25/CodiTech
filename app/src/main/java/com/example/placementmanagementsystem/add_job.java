@@ -44,7 +44,6 @@ public class add_job extends AppCompatActivity {
         recycle = findViewById(R.id.recycle);
 
 
-
         plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -123,6 +122,7 @@ public class add_job extends AppCompatActivity {
         arrJob = new ArrayList<>();
         arrJob.clear();
         db.collection("job").addSnapshotListener(new EventListener<QuerySnapshot>() {
+
             @Override
             public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                 if (error == null){
@@ -136,7 +136,8 @@ public class add_job extends AppCompatActivity {
                         add.setVisibility(View.GONE);
                         recycle.setAdapter(new RecyclerAddjobAdapter(add_job.this, arrJob));
 
-                    }else{
+                    }
+                    else{
                         add.setVisibility(View.VISIBLE);
                         recycle.setVisibility(View.GONE);
                     }
@@ -147,35 +148,5 @@ public class add_job extends AppCompatActivity {
         });
 
         }
-
-//    private void showNotes() {
-//
-//        arrJob = new ArrayList<>();
-//        arrJob.clear();
-//           db.collection("job").addSnapshotListener(new EventListener<QuerySnapshot>() {
-//            @Override
-//            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
-//                if (error == null)
-//                {
-//                    List<AddjobModel> data = value.toObjects(AddjobModel.class);
-//                    arrJob.addAll(data);
-//                    recycle.setLayoutManager(new LinearLayoutManager(add_job.this));
-//                    recycle.setAdapter(new RecyclerAddjobAdapter(add_job.this,arrJob));
-//                }
-//            }
-//        });
-//
-//            if(arrJob.size()>0){
-//                recycle.setVisibility(View.VISIBLE);
-//                add.setVisibility(View.GONE);
-//                recycle.setAdapter(new RecyclerAddjobAdapter(this, arrJob));
-//
-//            }else{
-//                add.setVisibility(View.VISIBLE);
-//                recycle.setVisibility(View.GONE);
-//            }
-//
-//    }
-
 
 }

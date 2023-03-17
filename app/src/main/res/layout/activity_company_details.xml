@@ -85,6 +85,7 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="@dimen/_10sdp"
                 android:backgroundTint="#FFFFFF"
+                app:cardElevation="@dimen/_16sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginStart="@dimen/_12sdp">
 

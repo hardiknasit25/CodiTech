@@ -71,67 +71,100 @@
         android:backgroundTint="#EEEEEE"
         tools:ignore="UnusedAttribute">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/resume"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_marginTop="@dimen/_80sdp"
-            android:backgroundTint="#FFFFFF"
-            android:layout_marginStart="@dimen/_80sdp"
-            app:cardCornerRadius="@dimen/_20sdp"
-            android:outlineSpotShadowColor="@color/black"
-            tools:ignore="UnusedAttribute">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp">
 
-            <ImageView
-                android:layout_width="@dimen/_70sdp"
-                android:layout_height="@dimen/_70sdp"
-                android:layout_marginTop="@dimen/_30sdp"
-                android:layout_marginStart="@dimen/_40sdp"
-                android:background="@drawable/resume"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <TextView
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="wrap_content"
-                android:text="Make Your Resume"
-                android:textColor="#4A6BD0"
-                android:textSize="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_120sdp"
-                android:textStyle="bold"
-                android:layout_marginStart="@dimen/_7sdp"
-                tools:ignore="HardcodedText" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/resume"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:backgroundTint="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:cardCornerRadius="@dimen/_20sdp"
+                    app:cardElevation="@dimen/_16sdp"
+                    android:outlineSpotShadowColor="@color/black"
+                    tools:ignore="UnusedAttribute">
 
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:layout_marginStart="@dimen/_40sdp"
+                        android:background="@drawable/resume"/>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/company"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_marginTop="@dimen/_280sdp"
-            android:backgroundTint="#FFFFFF"
-            android:layout_marginStart="@dimen/_80sdp"
-            app:cardCornerRadius="@dimen/_20sdp"
-            android:outlineSpotShadowColor="@color/black"
-            tools:ignore="UnusedAttribute">
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Make Your Resume"
+                        android:textColor="#4A6BD0"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_120sdp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_7sdp"
+                        tools:ignore="HardcodedText" />
 
-            <ImageView
-                android:layout_width="@dimen/_90sdp"
-                android:layout_height="@dimen/_90sdp"
-                android:layout_gravity="center"
-                android:background="@drawable/company"/>
+                </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:layout_width="@dimen/_150sdp"
-                android:layout_height="wrap_content"
-                android:text="Visit Companys"
-                android:textColor="#4A6BD0"
-                android:textSize="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_120sdp"
-                android:textStyle="bold"
-                android:layout_marginStart="@dimen/_25sdp"
-                tools:ignore="HardcodedText" />
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/company"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:backgroundTint="#FFFFFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/resume"
+                    app:cardCornerRadius="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_40sdp"
+                    app:cardElevation="@dimen/_16sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:outlineSpotShadowColor="@color/black"
+                    tools:ignore="UnusedAttribute">
 
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/company"/>
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:text="Visit Companys"
+                        android:textColor="#4A6BD0"
+                        android:textSize="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_120sdp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </ScrollView>
 
     </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

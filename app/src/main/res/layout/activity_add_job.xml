@@ -62,12 +62,14 @@
 
         <Button
             android:id="@+id/plus"
-            android:layout_width="@dimen/_50sdp"
-            android:layout_height="@dimen/_60sdp"
-            android:layout_marginStart="@dimen/_250sdp"
-            android:layout_marginTop="@dimen/_380sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_240sdp"
+            android:layout_marginTop="@dimen/_370sdp"
             android:backgroundTint="#4A6BD0"
-            app:cornerRadius="@dimen/_150sdp" />
+            android:text="a"
+            app:cornerRadius="@dimen/_150sdp"
+            tools:ignore="HardcodedText" />
 
     </androidx.cardview.widget.CardView>
 

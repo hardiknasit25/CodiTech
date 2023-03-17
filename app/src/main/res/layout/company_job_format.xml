@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:backgroundTint="#FEFEFE"
     android:orientation="vertical"
@@ -14,10 +14,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         app:cardCornerRadius="@dimen/_10sdp"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         android:backgroundTint="#FFFFFF"
         android:outlineSpotShadowColor="@color/black"
         tools:ignore="UnusedAttribute">
@@ -142,14 +143,8 @@
 
             </LinearLayout>
 
-
-
-
         </LinearLayout>
 
-
     </androidx.cardview.widget.CardView>
-
-
 
 </LinearLayout>

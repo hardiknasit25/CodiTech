@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -47,43 +46,48 @@ public class company_profile extends AppCompatActivity {
                 String ccity = city.getText().toString();
                 
                 ComanyModel data = new ComanyModel(cname, cemail, cnumber, ccity);
-                
-                db.collection("company").document().set(data).addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        Log.d("intentLog", "On Complete accessed.");
 
-                        if (TextUtils.isEmpty(cname)){
-                            Toast.makeText(company_profile.this, "Please Enter company name", Toast.LENGTH_SHORT).show();
-                            return;
+                if (TextUtils.isEmpty(cname)){
+                    Toast.makeText(company_profile.this, "Please Enter company name", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(cemail)){
+                    Toast.makeText(company_profile.this, "Please Enter email address", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(cnumber) || cnumber.length() < 10){
+                    Toast.makeText(company_profile.this, "Please Enter number", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(ccity)){
+                    Toast.makeText(company_profile.this, "Please Enter location", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                else{
+
+                    db.collection("company").document().set(data).addOnCompleteListener(new OnCompleteListener<Void>() {
+                        @Override
+                        public void onComplete(@NonNull Task<Void> task) {
+                            if (task.isSuccessful()){
+                                Toast.makeText(company_profile.this, "Profile Make Successful", Toast.LENGTH_SHORT).show();
+                                Intent intent = new Intent(company_profile.this, company_main_page.class);
+                                startActivity(intent);
+                                finish();
+                            }else{
+                                Toast.makeText(company_profile.this, "Please enter details", Toast.LENGTH_SHORT).show();
+                            }
+
+
+
                         }
+                    });
 
-                        if (TextUtils.isEmpty(cemail)){
-                            Toast.makeText(company_profile.this, "Please Enter email address", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
+                }
 
-                        if (TextUtils.isEmpty(cnumber) || cnumber.length() < 10){
-                            Toast.makeText(company_profile.this, "Please Enter number", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
-
-                        if (TextUtils.isEmpty(ccity)){
-                            Toast.makeText(company_profile.this, "Please Enter location", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
-
-                        else{
-                            Log.d("intentLog", "Else condition accessed.");
-                            Toast.makeText(company_profile.this, "Profile Make Successful", Toast.LENGTH_SHORT).show();
-                            Intent intent = new Intent(company_profile.this, company_main_page.class);
-                            startActivity(intent);
-                            finish();
-
-                        }
-                        
-                    }
-                });
             }
         });
     }

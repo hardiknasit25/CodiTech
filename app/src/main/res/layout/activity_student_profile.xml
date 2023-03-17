@@ -68,7 +68,7 @@
 
                 <EditText
                     android:id="@+id/name"
-                    android:layout_width="@dimen/_280sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
@@ -79,6 +79,7 @@
                     android:inputType="textAutoCorrect"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
                 <TextView
@@ -94,7 +95,7 @@
 
                 <EditText
                     android:id="@+id/email"
-                    android:layout_width="@dimen/_280sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
@@ -105,6 +106,7 @@
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
                 <TextView
@@ -120,7 +122,7 @@
 
                 <EditText
                     android:id="@+id/number"
-                    android:layout_width="@dimen/_280sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
@@ -130,6 +132,7 @@
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     android:inputType="number"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
@@ -146,7 +149,7 @@
 
                 <EditText
                     android:id="@+id/collage"
-                    android:layout_width="@dimen/_280sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
@@ -156,6 +159,7 @@
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     android:inputType="textAutoCorrect"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
@@ -172,7 +176,7 @@
 
                 <EditText
                     android:id="@+id/branch"
-                    android:layout_width="@dimen/_280sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
@@ -182,6 +186,7 @@
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     android:inputType="textAutoCorrect"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
@@ -198,7 +203,7 @@
 
                 <EditText
                     android:id="@+id/marks"
-                    android:layout_width="@dimen/_280sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
@@ -208,6 +213,7 @@
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     android:inputType="text"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
@@ -224,7 +230,7 @@
 
                 <EditText
                     android:id="@+id/graduation"
-                    android:layout_width="@dimen/_280sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
@@ -234,6 +240,7 @@
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     android:inputType="number"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
@@ -250,16 +257,17 @@
 
                 <EditText
                     android:id="@+id/skill"
-                    android:layout_width="@dimen/_280sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_40sdp"
                     android:background="@drawable/back"
                     android:backgroundTint="#DCDBDB"
-                    android:hint="collage name"
+                    android:hint="enter skills"
                     android:padding="@dimen/_8sdp"
                     android:textColor="#5E5C5C"
                     android:textColorHint="#5E5C5C"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
                     android:inputType="textAutoCorrect"
                     tools:ignore="HardcodedText,UnusedAttribute" />
 
