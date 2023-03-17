@@ -58,13 +58,16 @@
         </androidx.cardview.widget.CardView>
 
         <SearchView
-            android:layout_width="@dimen/_250sdp"
-            android:layout_height="@dimen/_30sdp"
-            android:backgroundTint="#FFFFFF"
-            android:background="@drawable/back"
-            android:layout_marginTop="@dimen/_60sdp"
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_57sdp"
             android:layout_marginStart="@dimen/_30sdp"
-            android:inputType="textAutoCorrect"/>
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:queryHint="Search Here...."
+            android:background="@drawable/search_view_bg"
+            android:iconifiedByDefault="false"/>
 
     </androidx.cardview.widget.CardView>
 
