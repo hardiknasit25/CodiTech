@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:backgroundTint="#FEFEFE"
     tools:ignore="UnusedAttribute">
@@ -13,12 +13,11 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="@dimen/_20sdp"
         app:cardCornerRadius="@dimen/_10sdp"
-        android:layout_marginStart="@dimen/_20sdp"
-        android:layout_marginEnd="@dimen/_20sdp"
         android:backgroundTint="#FFFFFF"
         app:cardElevation="@dimen/_16sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         tools:ignore="UnusedAttribute">
 
         <LinearLayout

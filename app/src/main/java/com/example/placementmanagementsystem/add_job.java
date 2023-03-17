@@ -61,8 +61,6 @@ public class add_job extends AppCompatActivity {
                 job = dialog.findViewById(R.id.job);
                 db = FirebaseFirestore.getInstance();
 
-                getAllData();
-
                 job.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

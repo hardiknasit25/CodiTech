@@ -1,6 +1,5 @@
 package com.example.placementmanagementsystem;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +12,14 @@ import java.util.ArrayList;
 
 public class RecycleProfileAdapter extends RecyclerView.Adapter<RecycleProfileAdapter.ViewHolder> {
 
+    company_student_profile company_student_profile;
+    ArrayList<StudentModel> arrStudent;
+    public RecycleProfileAdapter(company_student_profile company_student_profile, ArrayList<StudentModel> arrStudent) {
+        this.company_student_profile = company_student_profile;
+        this.arrStudent = arrStudent;
+
+    }
+
 //    student_profile student_profile;
 //    ArrayList<StudentModel> arrStudent;
 //
@@ -21,17 +28,10 @@ public class RecycleProfileAdapter extends RecyclerView.Adapter<RecycleProfileAd
 //        this.arrStudent = arrStudent;
 //    }
 
-    Context context;
-    ArrayList<StudentModel> arrStudent;
-    RecycleProfileAdapter(Context context, ArrayList<StudentModel> arrStudent) {
-        this.context = context;
-        this.arrStudent = arrStudent;
-    }
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.student_job_format,parent,false));
+        return new ViewHolder(LayoutInflater.from(company_student_profile).inflate(R.layout.student_job_format,parent,false));
     }
 
     @Override

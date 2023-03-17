@@ -144,12 +144,13 @@
 
             <Button
                 android:id="@+id/job"
-                android:layout_width="@dimen/_100sdp"
+                android:layout_width="wrap_content"
                 android:layout_height="@dimen/_40sdp"
                 android:layout_marginStart="@dimen/_70sdp"
                 android:backgroundTint="#4A6BD0"
                 android:layout_marginTop="@dimen/_20sdp"
                 android:text="ADD JOB"
+                android:textColor="#FFFFFF"
                 android:textSize="20sp"
                 app:cornerRadius="25dp"
                 tools:ignore="HardcodedText,UnusedAttribute" />

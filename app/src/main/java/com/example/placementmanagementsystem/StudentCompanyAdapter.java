@@ -10,17 +10,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class RecyclerAddjobAdapter extends RecyclerView.Adapter<RecyclerAddjobAdapter.ViewHolder> {
+public class StudentCompanyAdapter extends RecyclerView.Adapter<StudentCompanyAdapter.ViewHolder> {
 
-    add_job add_job;
-    ArrayList<AddjobModel> arrJob;
-    public RecyclerAddjobAdapter(add_job add_job, ArrayList<AddjobModel> arrJob) {
-        this.add_job = add_job;
-        this.arrJob = arrJob;
-    }
+
 
     visit_company visit_company;
-    public RecyclerAddjobAdapter(visit_company visit_company, ArrayList<AddjobModel> arrJob) {
+
+    ArrayList<AddjobModel> arrJob;
+    public StudentCompanyAdapter(visit_company visit_company, ArrayList<AddjobModel> arrJob) {
         this.visit_company = visit_company;
         this.arrJob = arrJob;
 
@@ -28,14 +25,14 @@ public class RecyclerAddjobAdapter extends RecyclerView.Adapter<RecyclerAddjobAd
 
     @NonNull
     @Override
-    public RecyclerAddjobAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public StudentCompanyAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        return new ViewHolder(LayoutInflater.from(add_job).inflate(R.layout.company_job_format,parent,false));
+        return new ViewHolder(LayoutInflater.from(visit_company).inflate(R.layout.company_job_format,parent,false));
     }
 
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerAddjobAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull StudentCompanyAdapter.ViewHolder holder, int position) {
         holder.date.setText(arrJob.get(position).getDate());
         holder.cgpa.setText(arrJob.get(position).getCgpa());
         holder.skill.setText(arrJob.get(position).getSkill());
