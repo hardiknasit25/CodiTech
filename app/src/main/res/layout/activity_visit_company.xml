@@ -20,12 +20,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_57sdp"
-            android:layout_marginStart="@dimen/_30sdp"
-            android:layout_marginBottom="@dimen/_5sdp"
-            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_100sdp"
             android:queryHint="Search Here...."
             android:background="@drawable/search_view_bg"
             android:iconifiedByDefault="false"/>
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_210sdp"
+            android:layout_marginTop="@dimen/_57sdp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Refresh"
+            android:textColor="#4A6BD0"
+            android:textStyle="bold"
+            app:cornerRadius="10dp" />
 
     </androidx.cardview.widget.CardView>
 
@@ -41,11 +53,68 @@
         android:backgroundTint="#EEEEEE"
         tools:ignore="UnusedAttribute">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycle"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone"/>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_370sdp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recommended For You :"
+                android:textColor="#4a6bd0"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                tools:ignore="HardcodedText"
+                android:layout_marginTop="@dimen/_20sdp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/linkedin"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/linkedin"
+                    android:padding="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <ImageView
+                    android:id="@+id/naukri"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/naukari"
+                    android:padding="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+                <ImageView
+                    android:id="@+id/indeed"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:background="@drawable/indeed"
+                    android:padding="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
 
 
     </androidx.cardview.widget.CardView>

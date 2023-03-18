@@ -17,16 +17,7 @@ public class RecycleProfileAdapter extends RecyclerView.Adapter<RecycleProfileAd
     public RecycleProfileAdapter(company_student_profile company_student_profile, ArrayList<StudentModel> arrStudent) {
         this.company_student_profile = company_student_profile;
         this.arrStudent = arrStudent;
-
     }
-
-//    student_profile student_profile;
-//    ArrayList<StudentModel> arrStudent;
-//
-//    public RecycleProfileAdapter(student_profile student_profile, ArrayList<StudentModel> arrStudent) {
-//        this.student_profile = student_profile;
-//        this.arrStudent = arrStudent;
-//    }
 
     @NonNull
     @Override

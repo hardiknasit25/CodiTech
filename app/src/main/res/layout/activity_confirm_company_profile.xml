@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirm_student_profile">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:backgroundTint="#4A6BD0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="UnusedAttribute">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/_25sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:backgroundTint="#EEEEEE"
+        tools:ignore="UnusedAttribute">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Has your profile already been"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:textColor="#4A6BD0"
+            android:layout_marginTop="@dimen/_150sdp"
+            android:layout_marginStart="@dimen/_30sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="created?"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:textColor="#4A6BD0"
+            android:layout_marginTop="@dimen/_175sdp"
+            android:layout_marginStart="@dimen/_110sdp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_210sdp"
+            android:layout_marginStart="@dimen/_80sdp">
+
+            <Button
+                android:id="@+id/yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4A6BD0"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4A6BD0"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

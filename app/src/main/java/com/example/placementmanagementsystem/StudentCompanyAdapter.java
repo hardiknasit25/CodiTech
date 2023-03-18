@@ -12,16 +12,23 @@ import java.util.ArrayList;
 
 public class StudentCompanyAdapter extends RecyclerView.Adapter<StudentCompanyAdapter.ViewHolder> {
 
-
-
     visit_company visit_company;
 
     ArrayList<AddjobModel> arrJob;
-    public StudentCompanyAdapter(visit_company visit_company, ArrayList<AddjobModel> arrJob) {
+//    ArrayList<ComanyModel> arrname;
+
+    public StudentCompanyAdapter(com.example.placementmanagementsystem.visit_company visit_company, ArrayList<AddjobModel> arrJob) {
         this.visit_company = visit_company;
         this.arrJob = arrJob;
-
+//        this.arrname = arrname;
     }
+
+//    public StudentCompanyAdapter(visit_company visit_company, ArrayList<AddjobModel> arrJob,ArrayList<ComanyModel> arrname;) {
+//        this.visit_company = visit_company;
+//        this.arrJob = arrJob;
+//        this.arrname = arrname;
+//
+//    }
 
     @NonNull
     @Override
@@ -33,6 +40,7 @@ public class StudentCompanyAdapter extends RecyclerView.Adapter<StudentCompanyAd
 
     @Override
     public void onBindViewHolder(@NonNull StudentCompanyAdapter.ViewHolder holder, int position) {
+//        holder.name.setText(arrname.get(position).getName());
         holder.date.setText(arrJob.get(position).getDate());
         holder.cgpa.setText(arrJob.get(position).getCgpa());
         holder.skill.setText(arrJob.get(position).getSkill());

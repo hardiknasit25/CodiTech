@@ -27,6 +27,19 @@
             android:layout_marginStart="@dimen/_55sdp"
             tools:ignore="HardcodedText" />
 
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_220sdp"
+            android:layout_marginTop="@dimen/_57sdp"
+            android:backgroundTint="#FFFFFF"
+            android:text="Search"
+            android:textColor="#4A6BD0"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            tools:ignore="HardcodedText" />
+
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
@@ -45,20 +58,19 @@
             android:id="@+id/recycle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone"/>
+            android:visibility="visible"/>
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Empty Student"
-            android:textStyle="bold"
-            android:textSize="@dimen/_20sdp"
-            android:layout_marginTop="@dimen/_200sdp"
-            android:layout_marginStart="@dimen/_95sdp"
-            android:gravity="center"
-            tools:ignore="HardcodedText"
-            android:textColor="#4A6BD0"/>
+<!--        <Button-->
+<!--            android:id="@+id/profile"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="View"-->
+<!--            android:textSize="@dimen/_10sdp"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:backgroundTint="#4A6DB0"-->
+<!--            android:layout_marginTop="@dimen/_360sdp"-->
+<!--            android:layout_marginStart="@dimen/_210sdp"-->
+<!--            android:textStyle="bold"/>-->
 
     </androidx.cardview.widget.CardView>
 

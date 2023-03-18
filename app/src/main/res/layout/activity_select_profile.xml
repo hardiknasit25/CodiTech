@@ -25,7 +25,7 @@
             android:textSize="@dimen/_30sdp"
             android:fontFamily="@font/amaranth_bold"
             android:layout_marginTop="@dimen/_40sdp"
-            android:layout_marginStart="@dimen/_45sdp"
+            android:layout_marginStart="@dimen/_40sdp"
             tools:ignore="HardcodedText" />
 
 

@@ -43,8 +43,9 @@ public class add_job extends AppCompatActivity {
         plus = findViewById(R.id.plus);
         recycle = findViewById(R.id.recycle);
 
-
+//        getAllData();
         plus.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View view) {
 
@@ -83,6 +84,7 @@ public class add_job extends AppCompatActivity {
 //                                        Intent intent = new Intent(add_job.this,student_main_page.class);
 //                                        startActivity(intent);
 //                                        finish();
+//                                        getAllData();
                                     }else{
                                         Toast.makeText(add_job.this, "Please Fill Data Properly", Toast.LENGTH_SHORT).show();
                                     }
@@ -105,6 +107,7 @@ public class add_job extends AppCompatActivity {
             }
 
         });
+//        getAllData();
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,10 +132,11 @@ public class add_job extends AppCompatActivity {
                     recycle.setLayoutManager(new LinearLayoutManager(add_job.this));
                     recycle.setAdapter(new RecyclerAddjobAdapter(add_job.this,arrJob));
 
+
                     if(arrJob.size()>0){
                         recycle.setVisibility(View.VISIBLE);
                         add.setVisibility(View.GONE);
-                        recycle.setAdapter(new RecyclerAddjobAdapter(add_job.this, arrJob));
+//                        recycle.setAdapter(new RecyclerAddjobAdapter(add_job.this, arrJob));
 
                     }
                     else{

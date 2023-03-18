@@ -109,6 +109,7 @@ public class student_profile extends AppCompatActivity {
                             if(task.isSuccessful()) {
                                 Toast.makeText(student_profile.this, "Profile Make Successful", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(student_profile.this, student_main_page.class);
+//                                Intent intent = new Intent(student_profile.this, company_student_profile.class);
                                 startActivity(intent);
                                 finish();
                             }else {

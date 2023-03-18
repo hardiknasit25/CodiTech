@@ -36,7 +36,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Company Name:"
+                    android:text="Company Name :"
                     android:textStyle="bold"
                     android:textSize="@dimen/_15sdp"
                     android:textColor="#4A6BD0"
@@ -65,7 +65,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Job Entery Date:"
+                    android:text="Job Entery Date :"
                     android:textStyle="bold"
                     android:textSize="@dimen/_15sdp"
                     android:textColor="#4A6BD0"
@@ -94,7 +94,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Required CGPA:"
+                    android:text="Required CGPA  :"
                     android:textStyle="bold"
                     android:textSize="@dimen/_15sdp"
                     android:textColor="#4A6BD0"
@@ -122,7 +122,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Required Skill:"
+                    android:text="Required Skill    :"
                     android:textStyle="bold"
                     android:textSize="@dimen/_15sdp"
                     android:textColor="#4A6BD0"
@@ -151,7 +151,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Job package:"
+                    android:text="Job package      :"
                     android:textStyle="bold"
                     android:textSize="@dimen/_15sdp"
                     android:textColor="#4A6BD0"

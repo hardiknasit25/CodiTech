@@ -1,11 +1,11 @@
 package com.example.placementmanagementsystem;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class student_main_page extends AppCompatActivity {
     private CardView company;
@@ -16,7 +16,6 @@ public class student_main_page extends AppCompatActivity {
         setContentView(R.layout.activity_student_main_page);
 
         company = findViewById(R.id.company);
-
         company.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

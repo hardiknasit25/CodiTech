@@ -19,12 +19,12 @@ public class RecyclerAddjobAdapter extends RecyclerView.Adapter<RecyclerAddjobAd
         this.arrJob = arrJob;
     }
 
-    visit_company visit_company;
-    public RecyclerAddjobAdapter(visit_company visit_company, ArrayList<AddjobModel> arrJob) {
-        this.visit_company = visit_company;
-        this.arrJob = arrJob;
-
-    }
+//    visit_company visit_company;
+//    public RecyclerAddjobAdapter(visit_company visit_company, ArrayList<AddjobModel> arrJob) {
+//        this.visit_company = visit_company;
+//        this.arrJob = arrJob;
+//
+//    }
 
     @NonNull
     @Override
